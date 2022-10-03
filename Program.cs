@@ -108,7 +108,14 @@ BinaryTreeVerticalSum.SolveIt(root);
 
 #region Convert String to ZigZag Characters
 Console.WriteLine("\n\n<=========== Convert String to ZigZag Characters =======>");
-Console.WriteLine("Zigzag for PAYPALISHIRING in 4 rows is = " + StringToZigZag.SolveIt("PAYPALISHIRING", 4));
+Console.WriteLine("Zigzag for PAYPALISHIRING in 3 rows is = " + StringToZigZag.SolveIt("PAYPALISHIRING", 3));
+#endregion
+
+#region Container with most amount of water
+Console.WriteLine("\n\n<=========== Container with most amount of water =======>");
+Console.WriteLine("For array {1,8,6,2,5,4,8,3,7} container with most amount of water is: " + ContainerWithMostWater.SolveIt(new int[]{ 1,8,6,2,5,4,8,3,7}));
+Console.WriteLine("For array {1,1} container with most amount of water is: " + ContainerWithMostWater.SolveIt(new int[] { 1, 1 }));
+Console.WriteLine("For array {10,10} container with most amount of water is: " + ContainerWithMostWater.SolveIt(new int[] { 10, 10 }));
 #endregion
 
 public class TreeNode
