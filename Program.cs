@@ -118,6 +118,19 @@ Console.WriteLine("For array {1,1} container with most amount of water is: " + C
 Console.WriteLine("For array {10,10} container with most amount of water is: " + ContainerWithMostWater.SolveIt(new int[] { 10, 10 }));
 #endregion
 
+#region Quick Sort
+Console.WriteLine("\n\n<=========== Quick Sort =======>");
+var qsArr = new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 };
+QuickSort.SolveIt(qsArr, 0, qsArr.Length - 1);
+Console.WriteLine("For array {1, 8, 6, 2, 5, 4, 8, 3, 7} sorted is: " + String.Join(", ", qsArr));
+qsArr = new int[] { 2, 15, 2, 11, 3, 7, 3, 2 };
+QuickSort.SolveIt(qsArr, 0, qsArr.Length - 1);
+Console.WriteLine("For array {2, 15, 2, 11, 3, 7, 3, 2 } sorted is: " + String.Join(", ", qsArr));
+qsArr = new int[] { 2, 6, 3, 0, 8, 7, 1, 5 };
+QuickSort.SolveIt(qsArr, 0, qsArr.Length - 1);
+Console.WriteLine("For array {2, 6, 3, 0, 8, 7, 1, 5} sorted is: " + String.Join(", ", qsArr));
+#endregion
+
 public class TreeNode
 {
     public int val;
