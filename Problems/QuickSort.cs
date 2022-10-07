@@ -23,7 +23,7 @@ namespace LeetCodeProblems.Problems
         {
             int pivot = arr[right];
             int i = left - 1;
-            for(int j=left; j <= right-1; j++)
+            for(int j=left; j < right; j++)
             {
                 if (arr[j] <= pivot)
                 {
