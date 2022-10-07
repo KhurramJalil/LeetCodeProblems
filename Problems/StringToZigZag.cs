@@ -19,7 +19,7 @@ namespace LeetCodeProblems.Problems
             //if this is the last row
             if (pY == numRows - 1)
             {
-                //increase pX and decreas pY
+                //increase pX and decrease pY
                 return new Point { X = pX + 1, Y = pY - 1 };
             }
             else if (pY == 0)
@@ -29,7 +29,7 @@ namespace LeetCodeProblems.Problems
             }
             else
             {
-                //if we are going zing (downward)
+                //if we are going zig (downward)
                 if ((pX % (numRows - 1)) == 0)
                 {
                     //increase pY
