@@ -131,6 +131,11 @@ QuickSort.SolveIt(qsArr, 0, qsArr.Length - 1);
 Console.WriteLine("For array {2, 6, 3, 0, 8, 7, 1, 5} sorted is: " + String.Join(", ", qsArr));
 #endregion
 
+#region Valid Brackets
+Console.WriteLine("\n\n<=========== Valid Brackets =======>");
+Console.WriteLine("() is valid: " + (ValidBrackets.SolveIt("()") ? "Yes" : "No"));
+#endregion
+
 public class TreeNode
 {
     public int val;
