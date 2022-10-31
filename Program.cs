@@ -136,6 +136,34 @@ Console.WriteLine("\n\n<=========== Valid Brackets =======>");
 Console.WriteLine("() is valid: " + (ValidBrackets.SolveIt("()") ? "Yes" : "No"));
 #endregion
 
+#region Left of Binary Tree
+root = new TreeNode(1);
+root.left = new TreeNode(2);
+root.right = new TreeNode(3);
+root.left.left = new TreeNode(4);
+root.left.right = new TreeNode(5);
+root.right.left = new TreeNode(6);
+root.right.right = new TreeNode(7);
+Console.WriteLine("\n\n<=========== Left View of Binary Tree =======>");
+var leftViewResult = LeftViewBinaryTree.SolveIt(root);
+for(int i = 0; i < leftViewResult.Count; i++)
+    Console.Write(leftViewResult[i].ToString()," ");
+#endregion
+
+#region Right of Binary Tree
+root = new TreeNode(1);
+root.left = new TreeNode(2);
+root.right = new TreeNode(3);
+root.left.left = new TreeNode(4);
+root.left.right = new TreeNode(5);
+root.right.left = new TreeNode(6);
+root.right.right = new TreeNode(7);
+Console.WriteLine("\n\n<=========== Right View of Binary Tree =======>");
+var rightViewResult = RightViewBinaryTree.SolveIt(root);
+for (int i = 0; i < rightViewResult.Count; i++)
+    Console.Write(rightViewResult[i].ToString(), " ");
+#endregion
+
 public class TreeNode
 {
     public int val;
